@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../static/js/lib/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<script src="../static/js/lib/JQuery/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../static/js/lib/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+	
+		<style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				background-image: url(../static/img/6.jpg);
+			}
+			.container{
+
+			}
+			.nav{
+				background-color: white;
+				font-size: large;
+				border-radius: 10px;
+			}
+			.nav_form{
+				list-style: none;
+
+			}
+			.nav_form>li{
+				display: inline;
+				float: left;
+				margin-right: 30px;
+			}
+			.nav_form>li>a{
+				display: block;
+				line-height: 50px;
+				color: #747774;
+				text-decoration: none;
+			}
+			.nav_form>li:hover a{
+				color: #F75C5C;
+				border-bottom: 2px solid #F75C5C;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+
+
+			{% if username %}
+
+				<div class="nav">
+					<ul class="nav_form">
+						<li style="color: #F75C5C;border-bottom: 2px solid #F75C5C;"><a href="/list"><a href="/">首页</a></li>
+						<li><a href="/userinfo">个人信息</a></li>
+						<li><a href="/list">项目列表</a></li>
+						<li><a href="/quit">登出</a></li>
+					</ul>
+				</div>
+
+
+				<h1>welcome {{username[0]}}</h1>
+			{% else %}
+
+				<div class="nav">
+					<ul class="nav_form">
+						<li style="color: #F75C5C;border-bottom: 2px solid #F75C5C;"><a href="/">首页</a></li>
+						<li><a href="/login">登录</a></li>
+						<li><a href="/regist">注册</a></li>
+					</ul>
+				</div>
+
+				<h1>welcome my web</h1>
+
+			{% endif %}
+		</div>
+
+
+	</body>
+</html>

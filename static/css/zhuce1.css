@@ -1,0 +1,95 @@
+.register_contant{
+	width: 100%;
+}
+.contant{
+	width: 1100px;
+	margin: 50px auto;
+}
+.r_c_top{
+	width: 705px;
+	height: 138px;
+	margin: 0 auto;
+	background: url(../img/j020.png) no-repeat center center;
+}
+.r_c_top dl{
+	width: 700px;
+	height: 121px;
+}
+.r_c_top dl dd{
+	display: inline;
+	float: left;
+	width: 233px;
+	height: 27px;
+	font-size: 16px;
+	color: #999;
+	text-align: center;
+	margin-top: 100px;
+}
+.r_c_list{
+	width: 600px;
+	height: 473px;
+	margin: 10px auto;
+	padding-top: 70px;
+}
+.r_c_l_con{
+	width: 387px;
+	height: 473px;
+	margin-left: 150px;
+	margin-right: 63px;
+}
+.r_c_l_con form input{
+	width: 297px;
+	height: 49px;
+	line-height: 49px;
+	text-indent: 8px;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 15px;
+	font-family: "微软雅黑";
+	color: #666;
+}
+.box_yzm{
+	width: 310px;
+	height: 49px;
+	line-height: 49px;
+}
+
+.box_yzm .yzm{
+	width: 215px;
+	height: 49px;
+	line-height: 49px;
+	text-indent: 8px;
+	border: 1px solid #e5e5e5;
+	margin-bottom: 15px;
+	font-family: "微软雅黑";
+	color: #666;
+	display: inline;
+	float: left;
+}
+.wyyd{
+	position: relative;
+	left: 5px;
+	font-weight: normal;
+	width: 405px;
+	display: block;
+	line-height: 27px;
+	font-size: 14px;
+}
+#submit{
+	width: 387px;
+	display: block;
+	height: 45px;
+	line-height: 45px;
+	text-align: center;
+	color: #fff!important;
+	font-size: 16px;
+	font-weight: normal;
+	background: #f75c5c;
+	text-decoration: none;
+}
+.huo p{
+	padding: 10px 10px;
+	height: 30px;
+	background: #fff;
+	text-align: center;
+	line-height: 30px;
+}

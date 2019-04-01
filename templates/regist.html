@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册界面</title>
+    <link rel="stylesheet" type="text/css" href="../static/js/lib/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <script src="../static/js/lib/JQuery/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/js/lib/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+
+    <style type="text/css">
+			body{
+				margin: 0;
+				padding: 0;
+				background-image: url(../static/img/6.jpg);
+			}
+			.container{
+
+			}
+			.box{
+				width: 450px;
+				height: auto;
+				margin: 130px auto;
+				text-align: center;
+			}
+			.nav{
+				background-color: white;
+				font-size: large;
+				border-radius: 10px;
+			}
+			.nav_form{
+				list-style: none;
+
+			}
+			.nav_form>li{
+				display: inline;
+				float: left;
+				margin-right: 30px;
+			}
+			.nav_form>li>a{
+				display: block;
+				line-height: 50px;
+				color: #747774;
+				text-decoration: none;
+			}
+			.nav_form>li:hover a{
+				color: #F75C5C;
+				border-bottom: 2px solid #F75C5C;
+			}
+		</style>
+</head>
+<body>
+    <div class="container">
+
+
+		<div class="nav">
+			<ul class="nav_form">
+				<li><a href="/">首页</a></li>
+				<li><a href="/login">登录</a></li>
+				<li style="color: #F75C5C;border-bottom: 2px solid #F75C5C;"><a href="/regist">注册</a></li>
+			</ul>
+		</div>
+
+		<div class="box">
+			<h2>注册用户</h2>
+			<form action="/regist" method="post">
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-2 control-label">账号：</label>
+					<div class="col-sm-10">
+					  <input type="text" name="username"  class="form-control" id="inputEmail3" placeholder="请输入账号">
+					</div>
+				</div>
+				<br><br>
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-2 control-label">密码：</label>
+					<div class="col-sm-10">
+					  <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+					</div>
+				</div>
+				<br><br>
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+					  <button type="submit" class="btn btn-success" style="margin-left: -40px;">注册</button>
+					</div>
+				</div>
+			</form>
+			<br>
+			<br>
+			<a href="/login" style="font-size: 20px">已有账户？试试登录</a>
+		</div>
+	</div>
+
+</body>
+</html>

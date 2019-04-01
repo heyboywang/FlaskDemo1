@@ -1,0 +1,231 @@
+*{
+margin: 0;
+padding: 0;
+font-style: "微软雅黑";
+}
+.menu{
+background-color: #323232;
+height: 40px;
+width: 100%;
+min-width: 1000px;
+font-size: 14px;
+}
+.menu_box{
+width: 1100px;
+height: 40px;
+margin: auto;
+}
+.menu_box_left>ul{
+color: #97989C;
+list-style: none;
+height: 40px;
+display: inline;
+
+}
+.menu_box_left>ul>li{
+float: left;
+width: 80px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+position: relative;
+border-right: 1px solid #97989C;
+}
+.menu_box_left>ul>li>a{
+text-decoration: none;
+color: #97989C;
+}
+.menu_box_left ul li a img{
+position: relative;
+top: 5px;
+}
+.m_b_img{
+margin-top: 7px;
+position: relative;
+}
+.menu_box_right{
+float: right;
+margin-top: 8px;
+background-color: #F75C5C;
+}
+.menu_box_right>a{
+color: #97989C;
+line-height: 25px;
+display: inline-block;
+width: 80px;
+text-align: center;
+text-decoration: none;
+font-weight: 300px ;
+}
+.m_b_r_1{
+border: 1px solid #F75C5C;
+background-color: #323232;
+}
+.m_b_r_2{
+margin-left: 0px ;
+border: 1px solid #F75C5C;
+}
+.top{
+border-bottom: 1px solid lightgrey;
+}
+.logo_nav{
+width: 1100px;
+min-width: 1100px;
+height: 80px;
+margin: auto;
+font-weight: 300px;
+font-size: 22px;
+}
+.logo{
+margin-top: 0px;
+position: absolute;
+}
+.nav{
+margin-left: 310px;
+margin-top: 25px;
+}
+.nav_form{
+list-style: none;
+
+}
+.nav_form>li{
+display: inline;
+float: left;
+margin-right: 30px;
+}
+.nav_form>li>a{
+display: block;
+line-height: 50px;
+color: #747774;
+text-decoration: none;
+}
+.nav_form>li:hover a{
+color: #F75C5C;
+border-bottom: 2px solid #F75C5C;
+}
+
+.footer{
+	height: 320px;
+	width: 100%;
+	background-color: #32353e;
+	color: #B4B5BA;
+}
+.footer a{
+	color: #B4B5BA;
+	text-decoration: none;
+}
+.f_contet{
+	margin: auto;
+	padding-top: 40px;
+	height: 210px;
+	width: 1100px;
+}
+.f_c_top{
+	
+	height: 150px;
+	width: 1100px;
+	display: block;
+	margin-right: 90px;
+	border-bottom: 1px solid #3d414d;
+}
+.f_c_t_left{
+	width: 387px;
+	min-height: 120px;
+	display: block;
+	float: left;
+}
+.f_c_t_left>p{
+	height: 50px;
+}
+.f_c_t_mid{
+	float: left;
+	width: 320px;
+	min-height: 120px;
+}
+.f_c_t_m_ul{
+	margin-top: 20px;
+}
+.f_c_t_m_ul li{
+	float: left;
+	margin-right: 20px;
+	list-style: none;
+	position: relative;
+}
+.f_c_t_m_ul li span{
+	display: block;
+	width: 54px;
+	height: 54px;
+	cursor: pointer;
+}
+.mid_li1{
+	background: url(img/J-phone2.png) no-repeat center center;
+}
+.mid_li1:hover{
+	background: url(img/J-phone21.png) no-repeat center center;
+}
+.mid_li2{
+	background: url(img/J-weixin.png) no-repeat center center;
+}
+.mid_li2_img{
+	display: none;
+	position: absolute;
+	top: -145px;
+	left: -37px;
+	z-index: 999;
+}
+.mid_li2:hover+div>img{
+	display: block;
+}
+.mid_li3{
+	background: url(img/J-weibo.png) no-repeat center center;
+}
+.mid_li3:hover{
+	background: url(img/J-weibo1.png) no-repeat center center;
+}
+
+.f_c_t_right{
+	width: 290px;
+	min-height: 120px;
+	float: right;
+}
+.f_c_t_right>dl{
+	float: right;
+	margin-right: 20px;
+	line-height: 30px;
+}
+.f_c_t_right>dl>dt{
+	display: block;
+	font-size: 18px;
+}
+.f_c_t_right>dl>dd{
+	display: block;
+	text-align: center;
+}
+.f_c_mid{
+	display: block;
+	padding-top: 15px;
+	width: 1100px;
+	height: 37px;
+	border-bottom: 1px solid #3d414d;
+	font-size: 14px;
+}
+.f_c_mid>ul{
+	float: left;
+}
+.f_c_mid>ul>li{
+	float: left;
+	display: inline;
+	margin-right: 20px;
+}
+.f_c_bottom{
+	height: 20px;
+}
+.f_c_bottom>img{
+	width: 88px;
+	height: auto;
+	margin-right: 5px;
+}
+.f_c_bottom>p{
+	margin-top: 12px;
+	float: right;
+}

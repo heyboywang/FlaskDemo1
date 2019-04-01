@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>项目详情</title>
+    <link rel="stylesheet" type="text/css" href="../static/js/lib/bootstrap/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+    <script src="../static/js/lib/JQuery/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+    <script src="../static/js/lib/bootstrap/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+
+    <style>
+
+        body{
+				margin: 0;
+				padding: 0;
+				background-image: url(../static/img/6.jpg);
+			}
+        .nav{
+				background-color: white;
+				font-size: large;
+				border-radius: 10px;
+			}
+			.nav_form{
+				list-style: none;
+
+			}
+			.nav_form>li{
+				display: inline;
+				float: left;
+				margin-right: 30px;
+			}
+			.nav_form>li>a{
+				display: block;
+				line-height: 50px;
+				color: #747774;
+				text-decoration: none;
+			}
+			.nav_form>li:hover a{
+				color: #F75C5C;
+				border-bottom: 2px solid #F75C5C;
+			}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+            <ul class="nav_form">
+                <li><a href="/">首页</a></li>
+                <li><a href="#">个人信息</a></li>
+                <li style="color: #F75C5C;border-bottom: 2px solid #F75C5C;"><a href="/list">项目列表</a></li>
+                <li><a href="/quit">登出</a></li>
+            </ul>
+        </div>
+        <h3><large>{{projectlist[1]}}</large>项目信息页</h3>
+        <h4>项目ID：</h4>
+        <textarea name="" cols="50" rows="1">{{projectlist[0]}}</textarea>
+        <h4>项目名称：</h4>
+        <textarea name="" cols="50" rows="5">{{projectlist[1]}}</textarea>
+        <h4>项目详情：</h4>
+        <textarea name="" cols="50" rows="10">{{projectlist[2]}}</textarea>
+        <br><br><br>
+
+        <a href="/editpro/{{projectlist[0]}}">编辑</a>
+        <a href="/list">返回</a>
+    </div>
+</body>
+</html>
