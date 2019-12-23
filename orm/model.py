@@ -14,7 +14,7 @@ class Book():
 
 from  sqlalchemy import create_engine
 
-engine = create_engine("mysql+mysqlconnector://root:123456@localhost/flaskdb",
+engine = create_engine("mysql+mysqlconnector://root:intel123@localhost/flaskdb",
                                     encoding='utf8', echo=True)
 
 from  sqlalchemy.ext.declarative import declarative_base

@@ -1,7 +1,7 @@
 from orm import model
 from sqlalchemy import create_engine
 
-enegin = create_engine("mysql+mysqlconnector://root:123456@localhost/flaskdb",
+enegin = create_engine("mysql+mysqlconnector://root:intel123@localhost/flaskdb",
                                     encoding='utf8', echo=True)
 from sqlalchemy.orm import sessionmaker
 session = sessionmaker(bind=enegin)()
